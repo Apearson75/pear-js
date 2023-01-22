@@ -1,13 +1,10 @@
-declare function createElement(tag: string, props: {}, ...children: any[]): PearElement;
-declare class PearElement {
-    tag: string;
-    props: {};
-    children: any[];
-    constructor(tag: string, props: {}, ...children: any[]);
-    get element(): HTMLElement;
-}
+import DOM from "./lib/DOM";
+import { createElement, PearElement } from "./lib/Element";
+import { State } from "./lib/State";
 declare const Pear: {
     PearElement: typeof PearElement;
     createElement: typeof createElement;
+    State: typeof State;
+    DOM: typeof DOM;
 };
 export default Pear;
