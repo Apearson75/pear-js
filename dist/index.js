@@ -1,6 +1,6 @@
-import DOM from "./lib/DOM";
-import { createElement, PearElement } from "./lib/Element";
-import { State } from "./lib/State";
+import DOM from "./lib/DOM.js";
+import { createElement, PearElement } from "./lib/Element.js";
+import { State } from "./lib/State.js";
 const Pear = {
     PearElement,
     createElement,
