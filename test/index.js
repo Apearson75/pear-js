@@ -1,5 +1,5 @@
 import Pear from "../src";
-import element from "./elem";
+import Element from "./elem";
 
 console.log("Built with Pear");
-Pear.DOM.render("#app", element);
+Pear.DOM.render("#app", <Element/>);
