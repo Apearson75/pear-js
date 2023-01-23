@@ -1,12 +1,8 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.PearElement = exports.createElement = void 0;
-const State_1 = require("./State");
-function createElement(tag, props, ...children) {
+import { State } from "./State";
+export function createElement(tag, props, ...children) {
     return new PearElement(tag, props, children);
 }
-exports.createElement = createElement;
-class PearElement {
+export class PearElement {
     tag;
     props;
     children;
@@ -29,12 +25,11 @@ class PearElement {
             else if (child instanceof PearElement) {
                 elem.appendChild(child.element);
             }
-            else if (child instanceof State_1.State) {
+            else if (child instanceof State) {
                 elem.innerHTML += child.val;
             }
         });
         return elem;
     }
 }
-exports.PearElement = PearElement;
 ;

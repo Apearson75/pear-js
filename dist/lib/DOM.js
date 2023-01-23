@@ -1,6 +1,4 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-class DOM {
+export default class DOM {
     static element;
     static path;
     static append(element) {
@@ -20,4 +18,3 @@ class DOM {
     }
     ;
 }
-exports.default = DOM;

@@ -3,7 +3,7 @@
 ## Javascript Element
 
 ```jsx
-import Pear from "js-pear";
+import Pear from "../src";
 
 function add() {
     countState.setState(countState.val + 1);
@@ -11,8 +11,12 @@ function add() {
 function minus() {
     countState.setState(countState.val - 1);
 }
+function changeColor() {
+    colorState.setState("color: green");
+}
 
 const countState = new Pear.State(0);
+const colorState = new Pear.State("color: red");
 
 const elem =
     <div>
@@ -21,6 +25,10 @@ const elem =
 
         <button onclick={add}>+</button>
         <button onclick={minus}>-</button>
+
+        <p style={colorState}>ABC</p>
+        <button onclick={changeColor}>Change Color</button>
+
         <p>Created With PearJS</p>
     </div>
 

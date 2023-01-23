@@ -1,10 +1,7 @@
-import DOM from "./lib/DOM";
-import { createElement, PearElement } from "./lib/Element";
-import { State } from "./lib/State";
 declare const Pear: {
-    PearElement: typeof PearElement;
-    createElement: typeof createElement;
-    State: typeof State;
-    DOM: typeof DOM;
+    PearElement: any;
+    createElement: any;
+    State: any;
+    DOM: any;
 };
 export default Pear;
